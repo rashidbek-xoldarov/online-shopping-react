@@ -1,0 +1,278 @@
+{
+  "users": [
+    {
+      "email": "reioe@df.d",
+      "password": "$2a$10$A/mYZAUMCe5gqiIOd8KTeeURgsqJwr8sH.8QPiKaUzXX6eDq6x3T2",
+      "first_name": "sdfdf",
+      "last_name": "sdfdf",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "email": "demo@gmail.com",
+      "password": "$2a$10$xt6KIKgjriRAQc0qO111s.3qfRg40aaE0pH5ZoWbenJpo5/J6eo66",
+      "first_name": "rashidbek",
+      "last_name": "xoldarov",
+      "gender": "male",
+      "id": 2
+    },
+    {
+      "email": "demo2@gmail.com",
+      "password": "$2a$10$q73PclPKBNx1WjCYVkjf/eqXs8FtKu/3HJrS2XSRTiv82KePlgWaS",
+      "first_name": "demo2",
+      "last_name": "2demo",
+      "gender": "male",
+      "id": 3
+    },
+    {
+      "email": "demo3@gmail.com",
+      "password": "$2a$10$gf06bYu1dceUyAwWpGxTo.Xzuo1gwAKVTEkaqoSzQxF6mWf6Bnmgu",
+      "first_name": "demo3",
+      "last_name": "3demo",
+      "gender": "male",
+      "id": 4
+    }
+  ],
+  "category": [
+    {
+      "category_name": "Apple",
+      "id": 1
+    },
+    {
+      "category_name": "Samsung",
+      "id": 2
+    },
+    {
+      "category_name": "Xiaomi",
+      "id": 3
+    },
+    {
+      "category_name": "Vivo",
+      "id": 4
+    },
+    {
+      "category_name": "Nokia",
+      "id": 5
+    }
+  ],
+  "orders": [
+    [
+      {
+        "id": 5,
+        "name": "Vivo V ",
+        "price": "560",
+        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
+        "quantity": 3,
+        "itemTotal": 1680
+      },
+      {
+        "id": 8,
+        "name": "Samsung S21",
+        "price": "1000",
+        "product_url": "https://www.corning.com/microsites/csm/gorillaglass/Samsung/CGG_Samsun_galaxys21_phantom.jpg",
+        "quantity": 2,
+        "itemTotal": 2000
+      },
+      {
+        "id": 4,
+        "name": "xiaomi mi 12 ultra",
+        "price": "350",
+        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "quantity": 1,
+        "itemTotal": 350
+      },
+      {
+        "id": 2,
+        "name": "Samsung A 52",
+        "price": "330",
+        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+        "quantity": 1,
+        "itemTotal": 330
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "name": "Vivo V ",
+        "price": "560",
+        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
+        "quantity": 2,
+        "itemTotal": 1120
+      },
+      {
+        "id": 4,
+        "name": "xiaomi mi 12 ultra",
+        "price": "350",
+        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "quantity": 3,
+        "itemTotal": 1050
+      },
+      {
+        "id": 2,
+        "name": "Samsung A 52",
+        "price": "330",
+        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+        "quantity": 2,
+        "itemTotal": 660
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "name": "Vivo V ",
+        "price": "560",
+        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
+        "quantity": 2,
+        "itemTotal": 1120
+      },
+      {
+        "id": 4,
+        "name": "xiaomi mi 12 ultra",
+        "price": "350",
+        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "quantity": 3,
+        "itemTotal": 1050
+      },
+      {
+        "id": 2,
+        "name": "Samsung A 52",
+        "price": "330",
+        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+        "quantity": 2,
+        "itemTotal": 660
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "name": "Vivo V ",
+        "price": "560",
+        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
+        "quantity": 2,
+        "itemTotal": 1120
+      },
+      {
+        "id": 4,
+        "name": "xiaomi mi 12 ultra",
+        "price": "350",
+        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "quantity": 3,
+        "itemTotal": 1050
+      },
+      {
+        "id": 2,
+        "name": "Samsung A 52",
+        "price": "330",
+        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+        "quantity": 2,
+        "itemTotal": 660
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "name": "Vivo V ",
+        "price": "560",
+        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
+        "quantity": 2,
+        "itemTotal": 1120
+      },
+      {
+        "id": 4,
+        "name": "xiaomi mi 12 ultra",
+        "price": "350",
+        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "quantity": 3,
+        "itemTotal": 1050
+      },
+      {
+        "id": 2,
+        "name": "Samsung A 52",
+        "price": "330",
+        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+        "quantity": 2,
+        "itemTotal": 660
+      }
+    ],
+    [
+      {
+        "id": 5,
+        "name": "Vivo V ",
+        "price": "560",
+        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
+        "quantity": 2,
+        "itemTotal": 1120
+      },
+      {
+        "id": 4,
+        "name": "xiaomi mi 12 ultra",
+        "price": "350",
+        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "quantity": 3,
+        "itemTotal": 1050
+      },
+      {
+        "id": 2,
+        "name": "Samsung A 52",
+        "price": "330",
+        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+        "quantity": 2,
+        "itemTotal": 660
+      }
+    ],
+    [
+      {
+        "id": 4,
+        "name": "xiaomi mi 12 ultra",
+        "price": "350",
+        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "quantity": 1,
+        "itemTotal": 350
+      }
+    ]
+  ],
+  "products": [
+    {
+      "product_name": "iphone 15",
+      "product_price": "800",
+      "product_url": "https://d2xamzlzrdbdbn.cloudfront.net/products/be07ec4f-c214-497f-930f-24be44406ccb21170555.jpg",
+      "category_id": "1",
+      "id": 1
+    },
+    {
+      "product_name": "Samsung A 52",
+      "product_price": "330",
+      "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+      "category_id": "2",
+      "id": 2
+    },
+    {
+      "product_name": "xiaomi mi 12 ultra",
+      "product_price": "350",
+      "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+      "category_id": "3",
+      "id": 4
+    },
+    {
+      "product_name": "Vivo V ",
+      "product_price": "560",
+      "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
+      "category_id": "4",
+      "id": 5
+    },
+    {
+      "product_name": "Samsung S22",
+      "product_price": "1000",
+      "product_url": "https://www.corning.com/microsites/csm/gorillaglass/Samsung/CGG_Samsun_galaxys21_phantom.jpg",
+      "category_id": 2,
+      "id": 8
+    },
+    {
+      "product_name": "Nokia 3310",
+      "product_price": "60",
+      "product_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmlmcYUipRKmjmJt5mAe3I99UaetbyG2Cg1HfuCrO&s",
+      "category_id": 6,
+      "id": 9
+    }
+  ]
+}
