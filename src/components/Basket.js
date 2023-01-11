@@ -67,51 +67,49 @@ const Basket = ({ drawer, setDrawer }) => {
         <List sx={{ padding: "10px", maxHeight: "500px", overflowY: "scroll" }}>
           {items.length !== 0 &&
             items.map((item) => (
-              <>
-                <ListItem key={item.id} sx={{ display: "block" }} divider>
-                  <Stack direction={"row"}>
-                    <ListItemAvatar>
-                      <Avatar>
-                        <img
-                          style={{
-                            objectFit: "cover",
-                            width: "40px",
-                            height: "40px",
-                          }}
-                          src={item.product_url}
-                          alt={item.name}
-                        />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      primary={item.name}
-                      secondary={`${item.price} $`}
-                    />
-                  </Stack>
-                  <Box display={"flex"} gap={2} alignItems="center">
-                    <Button
-                      variant="contained"
-                      size="small"
-                      onClick={() => {
-                        updateItemQuantity(item.id, item.quantity + 1);
-                      }}
-                    >
-                      +
-                    </Button>
-                    <Typography>{item.quantity}</Typography>
-                    <Button
-                      variant="contained"
-                      size="small"
-                      onClick={() => {
-                        updateItemQuantity(item.id, item.quantity - 1);
-                      }}
-                    >
-                      -
-                    </Button>
-                    <Typography>{item.price * item.quantity}</Typography>
-                  </Box>
-                </ListItem>
-              </>
+              <ListItem key={item.id} sx={{ display: "block" }} divider>
+                <Stack direction={"row"}>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <img
+                        style={{
+                          objectFit: "cover",
+                          width: "40px",
+                          height: "40px",
+                        }}
+                        src={item.product_url}
+                        alt={item.name}
+                      />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary={item.name}
+                    secondary={`${item.price} $`}
+                  />
+                </Stack>
+                <Box display={"flex"} gap={2} alignItems="center">
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={() => {
+                      updateItemQuantity(item.id, item.quantity + 1);
+                    }}
+                  >
+                    +
+                  </Button>
+                  <Typography>{item.quantity}</Typography>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={() => {
+                      updateItemQuantity(item.id, item.quantity - 1);
+                    }}
+                  >
+                    -
+                  </Button>
+                  <Typography>{item.price * item.quantity}</Typography>
+                </Box>
+              </ListItem>
             ))}
         </List>
       </Box>

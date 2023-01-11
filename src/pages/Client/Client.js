@@ -13,9 +13,9 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link, useNavigate } from "react-router-dom";
-import { Badge, Drawer, Grid } from "@mui/material";
+import { Badge, Grid } from "@mui/material";
 import axios from "axios";
-import CartCard from "../../components/CartCard";
+import { CartCard } from "../../components/CartCard";
 import { useCart } from "react-use-cart";
 import Basket from "../../components/Basket";
 

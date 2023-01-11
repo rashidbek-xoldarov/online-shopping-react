@@ -31,6 +31,13 @@
       "last_name": "3demo",
       "gender": "male",
       "id": 4
+    },
+    {
+      "email": "demo10@gmail.com",
+      "password": "$2a$10$9/r0GzRoeK5QilAgJMJ5s.ynWMta7vlyPQgJOjIhOZhLjGdLuSKfy",
+      "firstname": "demo10",
+      "lastname": "10demo",
+      "id": 5
     }
   ],
   "category": [
@@ -39,240 +46,66 @@
       "id": 1
     },
     {
-      "category_name": "Samsung",
-      "id": 2
-    },
-    {
-      "category_name": "Xiaomi",
-      "id": 3
+      "category_name": "Samsong",
+      "id": 5
     },
     {
       "category_name": "Vivo",
-      "id": 4
+      "id": 6
     },
     {
-      "category_name": "Nokia",
-      "id": 5
+      "category_name": "Matarola",
+      "id": 7
     }
   ],
   "orders": [
     [
       {
-        "id": 5,
-        "name": "Vivo V ",
-        "price": "560",
-        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
-        "quantity": 3,
-        "itemTotal": 1680
-      },
-      {
-        "id": 8,
-        "name": "Samsung S21",
-        "price": "1000",
-        "product_url": "https://www.corning.com/microsites/csm/gorillaglass/Samsung/CGG_Samsun_galaxys21_phantom.jpg",
-        "quantity": 2,
-        "itemTotal": 2000
-      },
-      {
-        "id": 4,
-        "name": "xiaomi mi 12 ultra",
-        "price": "350",
-        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
+        "id": 1,
+        "category_id": 1,
+        "name": "Iphone 14 pro",
+        "price": "1200",
+        "product_url": "data:image/jpeg;base64,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",
         "quantity": 1,
-        "itemTotal": 350
-      },
-      {
-        "id": 2,
-        "name": "Samsung A 52",
-        "price": "330",
-        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
-        "quantity": 1,
-        "itemTotal": 330
-      }
-    ],
-    [
-      {
-        "id": 5,
-        "name": "Vivo V ",
-        "price": "560",
-        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
-        "quantity": 2,
-        "itemTotal": 1120
-      },
-      {
-        "id": 4,
-        "name": "xiaomi mi 12 ultra",
-        "price": "350",
-        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
-        "quantity": 3,
-        "itemTotal": 1050
-      },
-      {
-        "id": 2,
-        "name": "Samsung A 52",
-        "price": "330",
-        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
-        "quantity": 2,
-        "itemTotal": 660
-      }
-    ],
-    [
-      {
-        "id": 5,
-        "name": "Vivo V ",
-        "price": "560",
-        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
-        "quantity": 2,
-        "itemTotal": 1120
-      },
-      {
-        "id": 4,
-        "name": "xiaomi mi 12 ultra",
-        "price": "350",
-        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
-        "quantity": 3,
-        "itemTotal": 1050
-      },
-      {
-        "id": 2,
-        "name": "Samsung A 52",
-        "price": "330",
-        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
-        "quantity": 2,
-        "itemTotal": 660
-      }
-    ],
-    [
-      {
-        "id": 5,
-        "name": "Vivo V ",
-        "price": "560",
-        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
-        "quantity": 2,
-        "itemTotal": 1120
-      },
-      {
-        "id": 4,
-        "name": "xiaomi mi 12 ultra",
-        "price": "350",
-        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
-        "quantity": 3,
-        "itemTotal": 1050
-      },
-      {
-        "id": 2,
-        "name": "Samsung A 52",
-        "price": "330",
-        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
-        "quantity": 2,
-        "itemTotal": 660
-      }
-    ],
-    [
-      {
-        "id": 5,
-        "name": "Vivo V ",
-        "price": "560",
-        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
-        "quantity": 2,
-        "itemTotal": 1120
-      },
-      {
-        "id": 4,
-        "name": "xiaomi mi 12 ultra",
-        "price": "350",
-        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
-        "quantity": 3,
-        "itemTotal": 1050
-      },
-      {
-        "id": 2,
-        "name": "Samsung A 52",
-        "price": "330",
-        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
-        "quantity": 2,
-        "itemTotal": 660
-      }
-    ],
-    [
-      {
-        "id": 5,
-        "name": "Vivo V ",
-        "price": "560",
-        "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
-        "quantity": 2,
-        "itemTotal": 1120
-      },
-      {
-        "id": 4,
-        "name": "xiaomi mi 12 ultra",
-        "price": "350",
-        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
-        "quantity": 3,
-        "itemTotal": 1050
-      },
-      {
-        "id": 2,
-        "name": "Samsung A 52",
-        "price": "330",
-        "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
-        "quantity": 2,
-        "itemTotal": 660
-      }
-    ],
-    [
-      {
-        "id": 4,
-        "name": "xiaomi mi 12 ultra",
-        "price": "350",
-        "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
-        "quantity": 1,
-        "itemTotal": 350
+        "itemTotal": 1200
       }
     ]
   ],
   "products": [
     {
-      "product_name": "iphone 15",
-      "product_price": "800",
-      "product_url": "https://d2xamzlzrdbdbn.cloudfront.net/products/be07ec4f-c214-497f-930f-24be44406ccb21170555.jpg",
-      "category_id": "1",
+      "product_name": "Iphone 14 pro",
+      "product_price": "1400",
+      "product_url": "data:image/jpeg;base64,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",
+      "category_id": 1,
       "id": 1
     },
     {
-      "product_name": "Samsung A 52",
-      "product_price": "330",
-      "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
-      "category_id": "2",
+      "product_name": "Iphone 12",
+      "product_price": "1000",
+      "product_url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-iphone-12-pro-gold-2020?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1635202844000",
+      "category_id": 1,
       "id": 2
     },
     {
-      "product_name": "xiaomi mi 12 ultra",
-      "product_price": "350",
-      "product_url": "https://kattabozor.s3.eu-central-1.amazonaws.com/ri/f867f20a0731f6b9454026d3f3d4f4d9379c87774185a89758162b7e36437e4e_8kQpmM_640l.jpg",
-      "category_id": "3",
-      "id": 4
+      "product_name": "Samsung A 51",
+      "product_price": "320",
+      "product_url": "https://img.us.news.samsung.com/us/wp-content/uploads/2020/06/21230103/A-Series_A51LTE_Blue.jpg",
+      "category_id": 5,
+      "id": 3
     },
     {
       "product_name": "Vivo V ",
-      "product_price": "560",
+      "product_price": "1400",
       "product_url": "https://www.vivoglobal.ph/wp-content/uploads/2022/02/v23-5g-sunshine-gold.png",
-      "category_id": "4",
-      "id": 5
-    },
-    {
-      "product_name": "Samsung S22",
-      "product_price": "1000",
-      "product_url": "https://www.corning.com/microsites/csm/gorillaglass/Samsung/CGG_Samsun_galaxys21_phantom.jpg",
-      "category_id": 2,
-      "id": 8
-    },
-    {
-      "product_name": "Nokia 3310",
-      "product_price": "60",
-      "product_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmlmcYUipRKmjmJt5mAe3I99UaetbyG2Cg1HfuCrO&s",
       "category_id": 6,
-      "id": 9
+      "id": 4
+    },
+    {
+      "product_name": "Motorola age 30 ultra",
+      "product_price": "450",
+      "product_url": "https://motorolaksa.vtexassets.com/arquivos/ids/155600/Motorola-edge30Ultra-pdp-render-AshGray-4-q4zbbybd.png?v=637977088432230000",
+      "category_id": 7,
+      "id": 5
     }
   ]
 }

@@ -25,24 +25,13 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteIcon from "@mui/icons-material/Delete";
-import { AuthContext } from "../context/auth-context";
-import { useNavigate } from "react-router-dom";
+import { CardProduct } from "./CartCard";
 
 const Product = () => {
   const [open, setOpen] = React.useState(false);
-  const [modalOpen, setModalOpen] = React.useState(false);
   const [category, setCategory] = useState([]);
   const [products, setProducts] = useState([]);
   const [value, setValue] = React.useState("1");
-  const nameRef = useRef();
-  const priceRef = useRef();
-  const urlRef = useRef();
-  const selectRef = useRef();
-
-  const { token } = useContext(AuthContext);
-  const navigate = useNavigate();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -77,10 +66,6 @@ const Product = () => {
     setOpen(false);
   };
 
-  const handleCloseModal = () => {
-    setModalOpen(false);
-  };
-
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (value) => {
@@ -89,35 +74,6 @@ const Product = () => {
         handleClose();
         getProduct();
         reset();
-      }
-    });
-  };
-
-  const editForm = (id) => {
-    const obj = {
-      product_name: nameRef.current.value,
-      product_price: priceRef.current.value,
-      product_url: urlRef.current.value,
-      category_id: selectRef.current.value,
-    };
-
-    axios.put("http://localhost:8080/products/" + id, obj).then((data) => {
-      if (data.status === 200) {
-        setModalOpen(false);
-        getProduct();
-      }
-    });
-
-    nameRef.current.value = "";
-    priceRef.current.value = "";
-    urlRef.current.value = "";
-    selectRef.current.value = "";
-  };
-
-  const deleteProduct = (id) => {
-    axios.delete("http://localhost:8080/products/" + id).then((data) => {
-      if (data.status === 200) {
-        getProduct();
       }
     });
   };
@@ -200,120 +156,11 @@ const Product = () => {
             {products.length !== 0 &&
               products.map((item) => (
                 <TabPanel key={item.id} value={String(item.category_id)}>
-                  <Card sx={{ maxWidth: 220, padding: "10px" }}>
-                    <CardMedia
-                      sx={{ height: 210 }}
-                      image={item.product_url}
-                      title={item.product_name}
-                    />
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="p"
-                        fontSize={18}
-                        component="div"
-                      >
-                        {item.product_name}
-                      </Typography>
-                    </CardContent>
-                    <CardActions>
-                      <Button
-                        variant="contained"
-                        color="error"
-                        endIcon={<DeleteIcon />}
-                        onClick={() => {
-                          if (token) {
-                            deleteProduct(item.id);
-                          } else {
-                            navigate("/login");
-                          }
-                        }}
-                      >
-                        Delete
-                      </Button>
-                      <Button
-                        variant="contained"
-                        color="success"
-                        endIcon={<EditIcon />}
-                        onClick={() => {
-                          if (token) {
-                            setModalOpen(true);
-                          } else {
-                            navigate("/login");
-                          }
-                        }}
-                      >
-                        Edit
-                      </Button>
-                    </CardActions>
-                    <Dialog open={modalOpen} onClose={handleCloseModal}>
-                      <DialogTitle>Add Item</DialogTitle>
-                      <DialogContent>
-                        <form
-                          onSubmit={(evt) => {
-                            evt.preventDefault();
-                            editForm(item.id);
-                          }}
-                        >
-                          <Stack
-                            sx={{ width: "400px" }}
-                            spacing={2}
-                            mt={"10px"}
-                            mb="8px"
-                          >
-                            <TextField
-                              fullWidth
-                              label="Product name"
-                              type="text"
-                              variant="outlined"
-                              required
-                              inputRef={nameRef}
-                              defaultValue={item.product_name}
-                            />
-                            <TextField
-                              fullWidth
-                              label="Prodcut price"
-                              type="text"
-                              variant="outlined"
-                              inputRef={priceRef}
-                              defaultValue={item.product_price}
-                              required
-                            />
-                            <TextField
-                              fullWidth
-                              label="Product image url"
-                              type="text"
-                              inputRef={urlRef}
-                              variant="outlined"
-                              defaultValue={item.product_url}
-                              required
-                            />
-                            <FormControl fullWidth>
-                              <InputLabel id="demo-simple-select-label">
-                                Company
-                              </InputLabel>
-                              <Select
-                                labelId="demo-simple-select-label"
-                                id="demo-simple-select"
-                                label="Company"
-                                inputRef={selectRef}
-                                defaultValue={item.category_id}
-                              >
-                                {category.map((item) => (
-                                  <MenuItem key={item.id} value={item.id}>
-                                    {item.category_name}
-                                  </MenuItem>
-                                ))}
-                              </Select>
-                            </FormControl>
-                          </Stack>
-                          <Button variant="contained" type="submit">
-                            Edit
-                          </Button>
-                        </form>
-                      </DialogContent>
-                    </Dialog>
-                  </Card>
+                  <CardProduct
+                    {...item}
+                    getProduct={getProduct}
+                    category={category}
+                  />
                 </TabPanel>
               ))}
           </Box>
